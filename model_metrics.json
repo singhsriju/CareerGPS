@@ -1,0 +1,162 @@
+{
+  "classifier": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0,
+    "confusion_matrix": [
+      [
+        169,
+        0
+      ],
+      [
+        0,
+        231
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 169.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 231.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 400.0
+      }
+    },
+    "roc_curve": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.004329004329004329,
+        1.0,
+        1.0
+      ],
+      "thresholds": [
+        Infinity,
+        0.9110813677281482,
+        0.681606281489976,
+        0.11151819870771673
+      ],
+      "auc": 1.0
+    },
+    "top_features": {
+      "high_intent": 0.575806,
+      "Q25_psych_long_term_thinking": 0.030199,
+      "psycho_composite": 0.028222,
+      "Q14_decision_urgency_enc": 0.01472,
+      "Q1_age_enc": 0.012209,
+      "urgency_score": 0.012012,
+      "Q25_psych_financial_over_passion": 0.010963,
+      "Q3_state_enc": 0.01085,
+      "Q6_edu_level_enc": 0.010747,
+      "clarity_score": 0.008697,
+      "Q10_career_clarity_enc": 0.008417,
+      "Q25_psych_risk_tolerance": 0.008242,
+      "Q30_primary_source_enc": 0.007812,
+      "Q7_stream_enc": 0.007586,
+      "Q12_past_guidance_enc": 0.007533,
+      "Q5_income_enc": 0.00752,
+      "income_numeric": 0.007492,
+      "Q28_monthly_wtp_enc": 0.007053,
+      "Q9_academic_perf_enc": 0.006597,
+      "Q25_psych_prefer_independent": 0.006363
+    }
+  },
+  "regressor": {
+    "mae": 21.29,
+    "r2": 0.9603,
+    "top_features": {
+      "Q28_monthly_wtp_enc": 0.910338,
+      "Q29_onetime_wtp_enc": 0.038614,
+      "Q20_who_pays_enc": 0.005231,
+      "Q11_challenges__Dont_know_my_strengths": 0.003736,
+      "Q2_gender_enc": 0.0032,
+      "Q23_info_sources__Teachers___school": 0.002644,
+      "Q30_primary_source_enc": 0.002603,
+      "psycho_composite": 0.001824,
+      "Q8_board_enc": 0.001742,
+      "Q13_guidance_satisfaction_enc": 0.001738,
+      "Q3_state_enc": 0.001632,
+      "Q5_income_enc": 0.001407,
+      "income_numeric": 0.001402,
+      "Q7_stream_enc": 0.001239,
+      "Q19_influencers__Friends___peers": 0.001197,
+      "Q16_career_domain__Defence_and_Public_Service": 0.001043,
+      "Q27_tradeoff_wtp_enc": 0.001017,
+      "Q15_subject_interests__Design_Art_Media": 0.000975,
+      "Q22_past_spending__Private_career_counsellor_session": 0.000925,
+      "Q11_challenges__Dont_know_exams_needed": 0.000835
+    }
+  },
+  "clustering": {
+    "best_k": 6,
+    "inertias": [
+      249130105776647.7,
+      104210433644140.2,
+      16705418780615.7,
+      691860026341.3,
+      187511.2,
+      173579.7,
+      161265.7
+    ],
+    "silhouette_scores": [
+      0.7459,
+      0.8002,
+      0.8801,
+      0.9751,
+      0.9999,
+      0.8073,
+      0.6262
+    ],
+    "cluster_wtp": {
+      "0": 315.1,
+      "1": 380.9,
+      "2": 300.9,
+      "3": 420.9,
+      "4": 286.3,
+      "5": 265.1
+    },
+    "cluster_sizes": {
+      "0": 524,
+      "4": 495,
+      "3": 373,
+      "2": 279,
+      "1": 237,
+      "5": 92
+    }
+  },
+  "arm": {
+    "total_rules": 242,
+    "min_support": 0.04,
+    "min_confidence": 0.25,
+    "min_lift": 1.1
+  },
+  "training_rows": 2000,
+  "feature_count": 110
+}
